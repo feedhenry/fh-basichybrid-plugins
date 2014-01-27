@@ -18,12 +18,15 @@
         <js-module src="www/battery.js" name="battery">
           <clobbers target="navigator.battery" />
         </js-module>
+
         <js-module src="www/CameraConstants.js" name="Camera">
           <clobbers target="Camera" />
         </js-module>
+
         <js-module src="www/CameraPopoverOptions.js" name="CameraPopoverOptions">
             <clobbers target="CameraPopoverOptions" />
         </js-module>
+
         <js-module src="www/Camera.js" name="camera">
             <clobbers target="navigator.camera" />
         </js-module>
@@ -340,10 +343,6 @@
                     <clobbers target="SMSBuilder" />
                 </js-module>
 
-                <js-module src="www/ios/fhapi-ios.js" name="FHAPI">
-                  <merges target="$fh" />
-                </js-module>
-
                 <js-module src="www/ios/Orientation.js" name="DeviceOrientation">
                     <clobbers target="DeviceOrientation" />
                 </js-module>
@@ -354,6 +353,10 @@
 
                 <js-module src="www/ios/Webview.js" name="Webview">
                       <clobbers target="Webview" />
+                </js-module>
+
+                <js-module src="www/ios/fhapi-ios.js" name="FHAPI">
+                  <merges target="$fh" />
                 </js-module>
 
 
