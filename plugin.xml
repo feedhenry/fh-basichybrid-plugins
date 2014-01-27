@@ -11,6 +11,8 @@
 
                 <license>MIT</license>
 
+        <!-- TODO: Automate this!! -->
+
         <engines>
                 <engine name="cordova" version=">=2.8.0" />
         </engines>
@@ -360,7 +362,65 @@
                 </js-module>
 
 
-                <source-file src="src/ios/FHCordovaLib/dist/libFHCordovaLib.a" framework="true" />
+                <!-- source-file src="src/ios/FHCordovaLib/dist/libFHCordovaLib.a" framework="true" /-->
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVAccelerometer.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVAccelerometer.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVBattery.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVBattery.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVCamera.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVCamera.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVCapture.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVCapture.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVCompass.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVCompass.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVContact.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVContact.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVContacts.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVContacts.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVDevice.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVDevice.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVExif.h" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVFile.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVFile.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVFileTransfer.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVFileTransfer.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVGlobalization.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVGlobalization.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVInAppBrowser.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVInAppBrowser.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVJpegHeaderWriter.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVJpegHeaderWriter.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVLocation.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVLocation.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVLogger.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVLogger.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVNotification.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVNotification.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVReachability.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVReachability.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVSound.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVSound.m" />
+                <header-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVVibration.h" />
+                <source-file src="src/ios/FHCordovaLib/CordovaPlugins/CDVVibration.m" />
+
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/CDVSplashScreen.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/CDVSplashScreen.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/EmailComposer.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/EmailComposer.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/FtpUtil.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/FtpUtil.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/Orientation.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/Orientation.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/SMSBuilder.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/SMSBuilder.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/UIColor+i7HexColor.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/UIColor+i7HexColor.h.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/Webview.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/Webview.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/WebviewController.h" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/WebviewController.m" />
+                <header-file src="src/ios/FHCordovaLib/FHPlugins/WhiteRaccoon/WhiteRaccoon.h" compiler-flags="-fno-objc-arc" />
+                <source-file src="src/ios/FHCordovaLib/FHPlugins/WhiteRaccoon/WhiteRaccoon.m" compiler-flags="-fno-objc-arc" />
 
                 <resource-file src="resources/ios/CDVNotification.bundle" />
                 <resource-file src="resources/ios/CDVCapture.bundle" />
