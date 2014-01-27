@@ -360,7 +360,7 @@
                 </js-module>
 
 
-                <source-file src="src/ios/dist/libFHCordovaLib.a" framework="true" />
+                <source-file src="src/ios/FHCordovaLib/dist/libFHCordovaLib.a" framework="true" />
 
                 <resource-file src="resources/ios/CDVNotification.bundle" />
                 <resource-file src="resources/ios/CDVCapture.bundle" />
