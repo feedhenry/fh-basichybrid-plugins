@@ -414,7 +414,7 @@
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/SMSBuilder.h" />
                 <source-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/SMSBuilder.m" />
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/UIColor+i7HexColor.h" />
-                <source-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/UIColor+i7HexColor.h.m" />
+                <source-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/UIColor+i7HexColor.m" />
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/Webview.h" />
                 <source-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/Webview.m" />
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/FHPlugins/WebviewController.h" />
