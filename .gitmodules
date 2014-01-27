@@ -1,0 +1,3 @@
+[submodule "libs/ios"]
+	path = libs/ios
+	url = https://github.com/feedhenry/cordova-ios.git

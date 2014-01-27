@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.feedhenry.plugins.basichybrid"
+        version="0.0.1">
+
+        <name>BasicHybirdAppPlugins</name>
+
+                <description>
+                        This plugin contains a collection of default Cordova plugins used by the FeedHenry basic hybrid apps.
+                </description>
+
+                <license>MIT</license>
+
+        <engines>
+                <engine name="cordova" version=">=2.8.0" />
+        </engines>
+
+        <js-module src="www/battery.js" name="battery">
+          <clobbers target="navigator.battery" />
+        </js-module>
+        <js-module src="www/CameraConstants.js" name="Camera">
+          <clobbers target="Camera" />
+        </js-module>
+        <js-module src="www/CameraPopoverOptions.js" name="CameraPopoverOptions">
+            <clobbers target="CameraPopoverOptions" />
+        </js-module>
+        <js-module src="www/Camera.js" name="camera">
+            <clobbers target="navigator.camera" />
+        </js-module>
+
+        <js-module src="www/contacts.js" name="contacts">
+            <clobbers target="navigator.contacts" />
+        </js-module>
+
+        <js-module src="www/Contact.js" name="Contact">
+            <clobbers target="Contact" />
+        </js-module>
+
+        <js-module src="www/ContactAddress.js" name="ContactAddress">
+            <clobbers target="ContactAddress" />
+        </js-module>
+
+        <js-module src="www/ContactError.js" name="ContactError">
+            <clobbers target="ContactError" />
+        </js-module>
+
+        <js-module src="www/ContactField.js" name="ContactField">
+            <clobbers target="ContactField" />
+        </js-module>
+
+        <js-module src="www/ContactFindOptions.js" name="ContactFindOptions">
+            <clobbers target="ContactFindOptions" />
+        </js-module>
+
+        <js-module src="www/ContactName.js" name="ContactName">
+            <clobbers target="ContactName" />
+        </js-module>
+
+        <js-module src="www/ContactOrganization.js" name="ContactOrganization">
+            <clobbers target="ContactOrganization" />
+        </js-module>
+
+        <js-module src="www/device.js" name="device">
+            <clobbers target="device" />
+        </js-module>
+
+        <js-module src="www/Acceleration.js" name="Acceleration">
+            <clobbers target="Acceleration" />
+        </js-module>
+        
+        <js-module src="www/accelerometer.js" name="accelerometer">
+            <clobbers target="navigator.accelerometer" />
+        </js-module>
+
+        <js-module src="www/notification.js" name="notification">
+            <merges target="navigator.notification" />
+        </js-module>
+
+        <js-module src="www/DirectoryEntry.js" name="DirectoryEntry">
+            <clobbers target="window.DirectoryEntry" />
+        </js-module>
+
+        <js-module src="www/DirectoryReader.js" name="DirectoryReader">
+            <clobbers target="window.DirectoryReader" />
+        </js-module>
+
+        <js-module src="www/Entry.js" name="Entry">
+            <clobbers target="window.Entry" />
+        </js-module>
+
+        <js-module src="www/File.js" name="File">
+            <clobbers target="window.File" />
+        </js-module>
+
+        <js-module src="www/FileEntry.js" name="FileEntry">
+            <clobbers target="window.FileEntry" />
+        </js-module>
+
+        <js-module src="www/FileError.js" name="FileError">
+            <clobbers target="window.FileError" />
+        </js-module>
+
+        <js-module src="www/FileReader.js" name="FileReader">
+            <clobbers target="window.FileReader" />
+        </js-module>
+
+        <js-module src="www/FileSystem.js" name="FileSystem">
+            <clobbers target="window.FileSystem" />
+        </js-module>
+
+        <js-module src="www/FileUploadOptions.js" name="FileUploadOptions">
+            <clobbers target="window.FileUploadOptions" />
+        </js-module>
+
+        <js-module src="www/FileUploadResult.js" name="FileUploadResult">
+            <clobbers target="window.FileUploadResult" />
+        </js-module>
+
+        <js-module src="www/FileWriter.js" name="FileWriter">
+            <clobbers target="window.FileWriter" />
+        </js-module>
+
+        <js-module src="www/Flags.js" name="Flags">
+            <clobbers target="window.Flags" />
+        </js-module>
+
+        <js-module src="www/LocalFileSystem.js" name="LocalFileSystem">
+            <!-- Non-standards way -->
+            <clobbers target="window.LocalFileSystem" />
+            <!-- Standards-compliant way -->
+            <merges target="window" />
+        </js-module>
+
+        <js-module src="www/Metadata.js" name="Metadata">
+            <clobbers target="window.Metadata" />
+        </js-module>
+
+        <js-module src="www/ProgressEvent.js" name="ProgressEvent">
+            <clobbers target="window.ProgressEvent" />
+        </js-module>
+
+        <js-module src="www/requestFileSystem.js" name="requestFileSystem">
+            <clobbers target="window.requestFileSystem" />
+        </js-module>
+
+        <js-module src="www/resolveLocalFileSystemURI.js" name="resolveLocalFileSystemURI">
+            <clobbers target="window.resolveLocalFileSystemURI" />
+        </js-module>
+
+        <js-module src="www/FileTransferError.js" name="FileTransferError">
+            <clobbers target="window.FileTransferError" />
+        </js-module>
+
+        <js-module src="www/FileTransfer.js" name="FileTransfer">
+            <clobbers target="window.FileTransfer" />
+        </js-module>
+
+        <js-module src="www/GlobalizationError.js" name="GlobalizationError">
+            <clobbers target="window.GlobalizationError" />
+        </js-module>
+        
+        <js-module src="www/globalization.js" name="globalization">
+            <clobbers target="navigator.globalization" />
+        </js-module>
+
+        <js-module src="www/InAppBrowser.js" name="InAppBrowser">
+            <clobbers target="window.open" />
+        </js-module>
+
+        <js-module src="www/MediaError.js" name="MediaError">
+            <clobbers target="window.MediaError" />
+        </js-module>
+        
+        <js-module src="www/Media.js" name="Media">
+            <clobbers target="window.Media" />
+        </js-module>
+
+        <js-module src="www/CaptureAudioOptions.js" name="CaptureAudioOptions">
+            <clobbers target="CaptureAudioOptions" />
+        </js-module>
+        
+        <js-module src="www/CaptureImageOptions.js" name="CaptureImageOptions">
+            <clobbers target="CaptureImageOptions" />
+        </js-module>
+
+        <js-module src="www/CaptureVideoOptions.js" name="CaptureVideoOptions">
+            <clobbers target="CaptureVideoOptions" />
+        </js-module>
+            
+        <js-module src="www/CaptureError.js" name="CaptureError">
+            <clobbers target="CaptureError" />
+        </js-module>
+
+        <js-module src="www/MediaFileData.js" name="MediaFileData">
+            <clobbers target="MediaFileData" />
+        </js-module>
+            
+        <js-module src="www/MediaFile.js" name="MediaFile">
+            <clobbers target="MediaFile" />
+        </js-module>
+        
+        <js-module src="www/capture.js" name="capture">
+            <clobbers target="navigator.device.capture" />
+        </js-module>
+
+        <js-module src="www/network.js" name="network">
+            <clobbers target="navigator.connection" />
+            <clobbers target="navigator.network.connection" />
+        </js-module>
+
+        <js-module src="www/Connection.js" name="Connection">
+            <clobbers target="Connection" />
+        </js-module>
+
+        <js-module src="www/vibration.js" name="notification">
+            <merges target="navigator.notification" />
+        </js-module>
+
+        <js-module src="www/EmailComposer.js" name="EmailComposer">
+            <clobbers target="navigator.EmailComposer" />
+        </js-module>
+
+        <js-module src="www/splashscreen.js" name="SplashScreen">
+            <clobbers target="navigator.splashscreen" />
+        </js-module>
+
+        <!-- ios -->
+        <platform name="ios">
+                <config-file target="config.xml" parent="/*">
+                    <feature name="Battery">
+                        <param name="ios-package" value="CDVBattery" /> 
+                    </feature>
+                    <feature name="Camera">
+                         <param name="ios-package" value="CDVCamera" />
+                    </feature>
+                    <feature name="Console">
+                         <param name="ios-package" value="CDVLogger"/>
+                    </feature>
+                    <feature name="Contacts">
+                        <param name="ios-package" value="CDVContacts"/>
+                    </feature>
+                    <feature name="Device">
+                        <param name="ios-package" value="CDVDevice"/>
+                    </feature>
+                    <feature name="Accelerometer">
+                        <param name="ios-package" value="CDVAccelerometer"/>
+                    </feature>
+                    <feature name="Notification">
+                        <param name="ios-package" value="CDVNotification"/>
+                    </feature>
+                    <feature name="File">
+                        <param name="ios-package" value="CDVFile" />
+                    </feature>
+                    <feature name="FileTransfer">
+                        <param name="ios-package" value="CDVFileTransfer" />
+                    </feature>
+                    <feature name="Geolocation">
+                        <param name="ios-package" value="CDVLocation"/>
+                    </feature>
+                    <feature name="Globalization">
+                        <param name="ios-package" value="CDVGlobalization" /> 
+                    </feature>
+                    <feature name="InAppBrowser">
+                        <param name="ios-package" value="CDVInAppBrowser" /> 
+                    </feature>
+                    <feature name="Media">
+                         <param name="ios-package" value="CDVSound" /> 
+                     </feature>
+                     <feature name="Capture">
+                        <param name="ios-package" value="CDVCapture" /> 
+                    </feature>
+                    <feature name="NetworkStatus">
+                        <param name="ios-package" value="CDVConnection" /> 
+                    </feature>
+                    <feature name="Vibration">
+                        <param name="ios-package" value="CDVVibration"/>
+                    </feature>
+                    <feature name="SMSBuilder">
+                        <param name="ios-package" value="SMSBuilder" />
+                    </feature>
+                    <feature name="EmailComposer">
+                       <param name="ios-package" value="EmailComposer" />
+                   </feature>
+                   <feature name="Orientation">
+                       <param name="ios-package" value="Orientation" />
+                   </feature>
+                   <feature name="FtpUtil">
+                       <param name="ios-package" value="FtpUtil" />
+                   </feature>
+                   <feature name="SplashScreen">
+                       <param name="ios-package" value="CDVSplashScreen"/>
+                       <param name="onload" value="true"/>
+                    </feature>
+                   <feature name="Webview">
+                        <param name="ios-package" value="Webview" />
+                    </feature>
+                </config-file>
+
+                <js-module src="www/ios/CameraPopoverHandle.js" name="CameraPopoverHandle">
+                    <clobbers target="CameraPopoverHandle" />
+                </js-module>
+
+                <js-module src="www/console-via-logger.js" name="console">
+                    <clobbers target="console" />
+                </js-module>
+
+                <js-module src="www/logger.js" name="logger">
+                    <clobbers target="cordova.logger" />
+                </js-module>
+
+                <js-module src="www/ios/contacts.js" name="contacts-ios">
+                    <merges target="navigator.contacts" />
+                </js-module>
+
+                <js-module src="www/ios/Contact.js" name="Contact-iOS">
+                    <merges target="Contact" />
+                </js-module>
+
+                <js-module src="www/ios/Entry.js" name="Entry1">
+                    <merges target="window.Entry" />
+                </js-module>
+
+                <js-module src="www/Coordinates.js" name="Coordinates">
+                    <clobbers target="Coordinates" />
+                </js-module>
+
+                <js-module src="www/PositionError.js" name="PositionError">
+                    <clobbers target="PositionError" />
+                </js-module>
+
+                <js-module src="www/Position.js" name="Position">
+                    <clobbers target="Position" />
+                </js-module>
+
+                <js-module src="www/geolocation.js" name="geolocation">
+                    <clobbers target="navigator.geolocation" />
+                </js-module>
+
+                <js-module src="www/ios/SMSBuilder.js" name="SMSBuilder">
+                    <clobbers target="SMSBuilder" />
+                </js-module>
+
+                <js-module src="www/ios/fhapi-ios.js" name="FHAPI">
+                  <merges target="$fh" />
+                </js-module>
+
+                <js-module src="www/ios/Orientation.js" name="DeviceOrientation">
+                    <clobbers target="DeviceOrientation" />
+                </js-module>
+
+                <js-module src="www/ios/FtpUtil.js" name="FtpUtil">
+                     <clobbers target="FtpUtil" />
+                </js-module>
+
+                <js-module src="www/ios/Webview.js" name="Webview">
+                      <clobbers target="Webview" />
+                </js-module>
+
+
+                <source-file src="src/ios/dist/libFHCordovaLib.a" framework="true" />
+
+                <resource-file src="resources/ios/CDVNotification.bundle" />
+                <resource-file src="resources/ios/CDVCapture.bundle" />
+
+                <resource-file src="resources/ios/house_icon.png" />
+                <resource-file src="resources/ios/left_arrow.png" />
+                <resource-file src="resources/ios/right_arrow.png" />
+
+                <framework src="CFNetwork.framework" />
+                <framework src="Foundation.framework" weak="true" />
+                <framework src="MessageUI.framework" />
+                <framework src="ImageIO.framework" weak="true" />
+                <framework src="CoreLocation.framework" />
+                <framework src="CoreGraphics.framework" />
+                <framework src="AssetsLibrary.framework" />
+                <framework src="MobileCoreServices.framework" />
+                <framework src="AddressBook.framework" weak="true" />
+                <framework src="AddressBookUI.framework" weak="true" />
+                <framework src="CoreMotion.framework" />
+                <framework src="AudioToolbox.framework" weak="true" />
+                <framework src="SystemConfiguration.framework" weak="true" />
+                <framework src="CoreTelephony.framework" />
+        </platform>
+
+</plugin>
