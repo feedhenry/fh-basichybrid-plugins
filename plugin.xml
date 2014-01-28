@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.feedhenry.plugins.basichybrid"
+        id="org.apache.cordova"
         version="0.0.1">
 
         <name>BasicHybirdAppPlugins</name>
@@ -17,215 +17,227 @@
                 <engine name="cordova" version=">=2.8.0" />
         </engines>
 
-        <js-module src="www/battery.js" name="battery">
+        <js-module src="www/battery.js" name="battery-status.battery">
           <clobbers target="navigator.battery" />
         </js-module>
 
-        <js-module src="www/CameraConstants.js" name="Camera">
+        <js-module src="www/CameraConstants.js" name="camera.Camera">
           <clobbers target="Camera" />
         </js-module>
 
-        <js-module src="www/CameraPopoverOptions.js" name="CameraPopoverOptions">
+        <js-module src="www/CameraPopoverOptions.js" name="camera.CameraPopoverOptions">
             <clobbers target="CameraPopoverOptions" />
         </js-module>
 
-        <js-module src="www/Camera.js" name="camera">
+        <js-module src="www/Camera.js" name="camera.camera">
             <clobbers target="navigator.camera" />
         </js-module>
 
-        <js-module src="www/contacts.js" name="contacts">
+        <js-module src="www/contacts.js" name="contacts.contacts">
             <clobbers target="navigator.contacts" />
         </js-module>
 
-        <js-module src="www/Contact.js" name="Contact">
+        <js-module src="www/Contact.js" name="contacts.Contact">
             <clobbers target="Contact" />
         </js-module>
 
-        <js-module src="www/ContactAddress.js" name="ContactAddress">
+        <js-module src="www/ContactAddress.js" name="contacts.ContactAddress">
             <clobbers target="ContactAddress" />
         </js-module>
 
-        <js-module src="www/ContactError.js" name="ContactError">
+        <js-module src="www/ContactError.js" name="contacts.ContactError">
             <clobbers target="ContactError" />
         </js-module>
 
-        <js-module src="www/ContactField.js" name="ContactField">
+        <js-module src="www/ContactField.js" name="contacts.ContactField">
             <clobbers target="ContactField" />
         </js-module>
 
-        <js-module src="www/ContactFindOptions.js" name="ContactFindOptions">
+        <js-module src="www/ContactFindOptions.js" name="contacts.ContactFindOptions">
             <clobbers target="ContactFindOptions" />
         </js-module>
 
-        <js-module src="www/ContactName.js" name="ContactName">
+        <js-module src="www/ContactName.js" name="contacts.ContactName">
             <clobbers target="ContactName" />
         </js-module>
 
-        <js-module src="www/ContactOrganization.js" name="ContactOrganization">
+        <js-module src="www/ContactOrganization.js" name="contacts.ContactOrganization">
             <clobbers target="ContactOrganization" />
         </js-module>
 
-        <js-module src="www/device.js" name="device">
+        <js-module src="www/device.js" name="device.device">
             <clobbers target="device" />
         </js-module>
 
-        <js-module src="www/Acceleration.js" name="Acceleration">
+        <js-module src="www/Acceleration.js" name="device-motion.Acceleration">
             <clobbers target="Acceleration" />
         </js-module>
         
-        <js-module src="www/accelerometer.js" name="accelerometer">
+        <js-module src="www/accelerometer.js" name="device-motion.accelerometer">
             <clobbers target="navigator.accelerometer" />
         </js-module>
 
-        <js-module src="www/notification.js" name="notification">
+        <js-module src="www/CompassError.js" name="device-orientation.CompassError">
+            <clobbers target="CompassError" />
+        </js-module>
+
+        <js-module src="www/CompassHeading.js" name="device-orientation.CompassHeading">
+            <clobbers target="CompassHeading" />
+        </js-module>
+
+        <js-module src="www/compass.js" name="device-orientation.compass">
+            <clobbers target="navigator.compass" />
+        </js-module>
+
+        <js-module src="www/notification.js" name="dialogs.notification">
             <merges target="navigator.notification" />
         </js-module>
 
-        <js-module src="www/DirectoryEntry.js" name="DirectoryEntry">
+        <js-module src="www/DirectoryEntry.js" name="file.DirectoryEntry">
             <clobbers target="window.DirectoryEntry" />
         </js-module>
 
-        <js-module src="www/DirectoryReader.js" name="DirectoryReader">
+        <js-module src="www/DirectoryReader.js" name="file.DirectoryReader">
             <clobbers target="window.DirectoryReader" />
         </js-module>
 
-        <js-module src="www/Entry.js" name="Entry">
+        <js-module src="www/Entry.js" name="file.Entry">
             <clobbers target="window.Entry" />
         </js-module>
 
-        <js-module src="www/File.js" name="File">
+        <js-module src="www/File.js" name="file.File">
             <clobbers target="window.File" />
         </js-module>
 
-        <js-module src="www/FileEntry.js" name="FileEntry">
+        <js-module src="www/FileEntry.js" name="file.FileEntry">
             <clobbers target="window.FileEntry" />
         </js-module>
 
-        <js-module src="www/FileError.js" name="FileError">
+        <js-module src="www/FileError.js" name="file.FileError">
             <clobbers target="window.FileError" />
         </js-module>
 
-        <js-module src="www/FileReader.js" name="FileReader">
+        <js-module src="www/FileReader.js" name="file.FileReader">
             <clobbers target="window.FileReader" />
         </js-module>
 
-        <js-module src="www/FileSystem.js" name="FileSystem">
+        <js-module src="www/FileSystem.js" name="file.FileSystem">
             <clobbers target="window.FileSystem" />
         </js-module>
 
-        <js-module src="www/FileUploadOptions.js" name="FileUploadOptions">
+        <js-module src="www/FileUploadOptions.js" name="file.FileUploadOptions">
             <clobbers target="window.FileUploadOptions" />
         </js-module>
 
-        <js-module src="www/FileUploadResult.js" name="FileUploadResult">
+        <js-module src="www/FileUploadResult.js" name="file.FileUploadResult">
             <clobbers target="window.FileUploadResult" />
         </js-module>
 
-        <js-module src="www/FileWriter.js" name="FileWriter">
+        <js-module src="www/FileWriter.js" name="file.FileWriter">
             <clobbers target="window.FileWriter" />
         </js-module>
 
-        <js-module src="www/Flags.js" name="Flags">
+        <js-module src="www/Flags.js" name="file.Flags">
             <clobbers target="window.Flags" />
         </js-module>
 
-        <js-module src="www/LocalFileSystem.js" name="LocalFileSystem">
+        <js-module src="www/LocalFileSystem.js" name="file.LocalFileSystem">
             <!-- Non-standards way -->
             <clobbers target="window.LocalFileSystem" />
             <!-- Standards-compliant way -->
             <merges target="window" />
         </js-module>
 
-        <js-module src="www/Metadata.js" name="Metadata">
+        <js-module src="www/Metadata.js" name="file.Metadata">
             <clobbers target="window.Metadata" />
         </js-module>
 
-        <js-module src="www/ProgressEvent.js" name="ProgressEvent">
+        <js-module src="www/ProgressEvent.js" name="file.ProgressEvent">
             <clobbers target="window.ProgressEvent" />
         </js-module>
 
-        <js-module src="www/requestFileSystem.js" name="requestFileSystem">
+        <js-module src="www/requestFileSystem.js" name="file.requestFileSystem">
             <clobbers target="window.requestFileSystem" />
         </js-module>
 
-        <js-module src="www/resolveLocalFileSystemURI.js" name="resolveLocalFileSystemURI">
+        <js-module src="www/resolveLocalFileSystemURI.js" name="file.resolveLocalFileSystemURI">
             <clobbers target="window.resolveLocalFileSystemURI" />
         </js-module>
 
-        <js-module src="www/FileTransferError.js" name="FileTransferError">
+        <js-module src="www/FileTransferError.js" name="file-transfer.FileTransferError">
             <clobbers target="window.FileTransferError" />
         </js-module>
 
-        <js-module src="www/FileTransfer.js" name="FileTransfer">
+        <js-module src="www/FileTransfer.js" name="file-transfer.FileTransfer">
             <clobbers target="window.FileTransfer" />
         </js-module>
 
-        <js-module src="www/GlobalizationError.js" name="GlobalizationError">
+        <js-module src="www/GlobalizationError.js" name="globalization.GlobalizationError">
             <clobbers target="window.GlobalizationError" />
         </js-module>
         
-        <js-module src="www/globalization.js" name="globalization">
+        <js-module src="www/globalization.js" name="globalization.globalization">
             <clobbers target="navigator.globalization" />
         </js-module>
 
-        <js-module src="www/InAppBrowser.js" name="InAppBrowser">
+        <js-module src="www/InAppBrowser.js" name="inappbrowser.InAppBrowser">
             <clobbers target="window.open" />
         </js-module>
 
-        <js-module src="www/MediaError.js" name="MediaError">
+        <js-module src="www/MediaError.js" name="media.MediaError">
             <clobbers target="window.MediaError" />
         </js-module>
         
-        <js-module src="www/Media.js" name="Media">
+        <js-module src="www/Media.js" name="media.Media">
             <clobbers target="window.Media" />
         </js-module>
 
-        <js-module src="www/CaptureAudioOptions.js" name="CaptureAudioOptions">
+        <js-module src="www/CaptureAudioOptions.js" name="media-capture.CaptureAudioOptions">
             <clobbers target="CaptureAudioOptions" />
         </js-module>
         
-        <js-module src="www/CaptureImageOptions.js" name="CaptureImageOptions">
+        <js-module src="www/CaptureImageOptions.js" name="media-capture.CaptureImageOptions">
             <clobbers target="CaptureImageOptions" />
         </js-module>
 
-        <js-module src="www/CaptureVideoOptions.js" name="CaptureVideoOptions">
+        <js-module src="www/CaptureVideoOptions.js" name="media-capture.CaptureVideoOptions">
             <clobbers target="CaptureVideoOptions" />
         </js-module>
             
-        <js-module src="www/CaptureError.js" name="CaptureError">
+        <js-module src="www/CaptureError.js" name="media-capture.CaptureError">
             <clobbers target="CaptureError" />
         </js-module>
 
-        <js-module src="www/MediaFileData.js" name="MediaFileData">
+        <js-module src="www/MediaFileData.js" name="media-capture.MediaFileData">
             <clobbers target="MediaFileData" />
         </js-module>
             
-        <js-module src="www/MediaFile.js" name="MediaFile">
+        <js-module src="www/MediaFile.js" name="media-capture.MediaFile">
             <clobbers target="MediaFile" />
         </js-module>
         
-        <js-module src="www/capture.js" name="capture">
+        <js-module src="www/capture.js" name="media-capture.capture">
             <clobbers target="navigator.device.capture" />
         </js-module>
 
-        <js-module src="www/network.js" name="network">
+        <js-module src="www/network.js" name="network-information.network">
             <clobbers target="navigator.connection" />
             <clobbers target="navigator.network.connection" />
         </js-module>
 
-        <js-module src="www/Connection.js" name="Connection">
+        <js-module src="www/Connection.js" name="network-information.Connection">
             <clobbers target="Connection" />
         </js-module>
 
-        <js-module src="www/vibration.js" name="notification">
+        <js-module src="www/vibration.js" name="vibration.notification">
             <merges target="navigator.notification" />
         </js-module>
 
-        <js-module src="www/EmailComposer.js" name="EmailComposer">
+        <js-module src="www/EmailComposer.js" name="fh.EmailComposer">
             <clobbers target="navigator.EmailComposer" />
         </js-module>
 
-        <js-module src="www/splashscreen.js" name="SplashScreen">
+        <js-module src="www/splashscreen.js" name="splashscreen.SplashScreen">
             <clobbers target="navigator.splashscreen" />
         </js-module>
 
@@ -301,43 +313,43 @@
                     </feature>
                 </config-file>
 
-                <js-module src="www/ios/CameraPopoverHandle.js" name="CameraPopoverHandle">
+                <js-module src="www/ios/CameraPopoverHandle.js" name="camera.CameraPopoverHandle">
                     <clobbers target="CameraPopoverHandle" />
                 </js-module>
 
-                <js-module src="www/console-via-logger.js" name="console">
+                <js-module src="www/console-via-logger.js" name="console.console">
                     <clobbers target="console" />
                 </js-module>
 
-                <js-module src="www/logger.js" name="logger">
+                <js-module src="www/logger.js" name="console.logger">
                     <clobbers target="cordova.logger" />
                 </js-module>
 
-                <js-module src="www/ios/contacts.js" name="contacts-ios">
+                <js-module src="www/ios/contacts.js" name="contacts.contacts-ios">
                     <merges target="navigator.contacts" />
                 </js-module>
 
-                <js-module src="www/ios/Contact.js" name="Contact-iOS">
+                <js-module src="www/ios/Contact.js" name="contacts.Contact-iOS">
                     <merges target="Contact" />
                 </js-module>
 
-                <js-module src="www/ios/Entry.js" name="Entry1">
+                <js-module src="www/ios/Entry.js" name="file.Entry1">
                     <merges target="window.Entry" />
                 </js-module>
 
-                <js-module src="www/Coordinates.js" name="Coordinates">
+                <js-module src="www/Coordinates.js" name="geolocation.Coordinates">
                     <clobbers target="Coordinates" />
                 </js-module>
 
-                <js-module src="www/PositionError.js" name="PositionError">
+                <js-module src="www/PositionError.js" name="geolocation.PositionError">
                     <clobbers target="PositionError" />
                 </js-module>
 
-                <js-module src="www/Position.js" name="Position">
+                <js-module src="www/Position.js" name="geolocation.Position">
                     <clobbers target="Position" />
                 </js-module>
 
-                <js-module src="www/geolocation.js" name="geolocation">
+                <js-module src="www/geolocation.js" name="geolocation.geolocation">
                     <clobbers target="navigator.geolocation" />
                 </js-module>
 
