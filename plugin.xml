@@ -385,6 +385,8 @@
                 <source-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVCapture.m" />
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVCompass.h" />
                 <source-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVCompass.m" />
+                <header-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVConnection.h" />
+                <source-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVConnection.m" />
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVContact.h" />
                 <source-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVContact.m" />
                 <header-file src="src/ios/FHCordovaLib/FHCordovaLib/CordovaPlugins/CDVContacts.h" />
