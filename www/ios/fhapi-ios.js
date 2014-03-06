@@ -537,7 +537,7 @@ if(window.$fh){
     }else if(p.type == "sms"){
       if(window.plugins && (window.plugins.smsComposer || window.plugins.smsBuilder)){
         var smsComposer = window.plugins.smsBuilder || window.plugins.smsComposer;
-        smsComposer.showSMSBuilderWithCB(function(res){
+        smsComposer.showSMSBuilderWithCB(function(result){
           var status = 'Failed'; // default to failed
           if (result === 0)
           {
