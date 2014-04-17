@@ -4,7 +4,7 @@ function EmailComposer() {
 	this.resultCallback = null; // Function
 }
 
-EmailComposer.ComposeResultType = {
+EmailComposer.prototype.ComposeResultType = {
 Cancelled:0,
 Saved:1,
 Sent:2,
@@ -32,7 +32,7 @@ EmailComposer.prototype.showEmailComposer = function(subject,body,toRecipients,c
 		args.bIsHTML = bIsHTML;
     if(attachments)
         args.attachments = attachments;
-	
+
 	cordova.exec(null, null, "EmailComposer", "showEmailComposer", [args]);
 }
 
@@ -50,11 +50,11 @@ cordova.addConstructor(function()  {
 					   {
 					   window.plugins = {};
 					   }
-					   
+
 					   // shim to work in 1.5 and 1.6
 					   if (!window.Cordova) {
 					   window.Cordova = cordova;
 					   };
-					   
+
 					   window.plugins.EmailComposer = new EmailComposer();
 					   });
